@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, expedita?
+    </p>
+    <div id="form-container">
+      <form action="" id="survey-form">
+        <label for="name" id="name-label">Enter Your Name</label> <br />
+        <input type="text" name="name" id="name" /> <br />
+        <label for="email" id="email-label">Enter Your Email</label> <br />
+        <input type="text" name="email" id="email" /> <br />
+        <label for="age" id="number-label">Enter Your Age</label> <br />
+        <input type="number" name="age" id="number" min="16" max="70" /> <br />
+        <label for="dropdown">Select</label> <br />
+        <select id="dropdown" name="dropdown">
+          <option value="one">1</option>
+          <option value="two">2</option>
+          <option value="three">3</option>
+          <option value="four">4</option>
+        </select>
+        <br />
+        <p>Select any one.</p>
+          <input type="radio" id="html" name="fav_language" value="HTML" />  
+        <label for="html">HTML</label><br />
+          <input type="radio" id="css" name="fav_language" value="CSS" />  
+        <label for="css">CSS</label>
+        <p>Select your choice</p>
+        <input
+          type="checkbox"
+          id="javascript"
+          name="javascript"
+          value="Javascript"
+        />
+        <label for="vehicle1"> Javascript</label><br />
+        <input type="checkbox" id="python" name="python" value="Python" />
+        <label for="vehicle2"> Python</label><br />
+        <p>Comments</p>
+        <textarea id="textarea" name="textarea" rows="5" cols="30"></textarea>
+        <br />
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

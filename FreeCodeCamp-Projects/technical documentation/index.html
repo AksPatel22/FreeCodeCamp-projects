@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical documentation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <nav id="navbar">
+        <header>Python Programming</header>
+        <ul>
+          <li><a class="nav-link" href="#introduction">Introduction</a></li>
+          <hr />
+          <li><a class="nav-link" href="#data_types">Data Types</a></li>
+          <hr />
+          <li><a class="nav-link" href="#variables">Variables</a></li>
+          <hr />
+          <li>
+            <a class="nav-link" href="#if_else_statements"
+              >if-else statements</a
+            >
+          </li>
+          <hr />
+          <li><a class="nav-link" href="#while_loop">while loop</a></li>
+          <hr />
+          <li>
+            <a class="nav-link" href="#user_defined_function"
+              >User Defined Functions</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="introduction">
+          <header>Introduction</header>
+          <article>
+            <p>
+              Python is a widely used general-purpose, high level programming
+              language. It was created by Guido van Rossum in 1991 and further
+              developed by the Python Software Foundation. It was designed with
+              an emphasis on code readability, and its syntax allows programmers
+              to express their concepts in fewer lines of code.
+            </p>
+            <p>
+              Python is a programming language that lets you work quickly and
+              integrate systems more efficiently. There are two major Python
+              versions: Python 2 and Python 3. Both are quite different.
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="data_types">
+          <header>Data Types</header>
+          <article>
+            <p>
+              In programming, data type is an important concept. Variables can
+              store data of different types, and different types can do
+              different things. Python has the following data types built-in by
+              default, in these categories:
+            </p>
+            <ul>
+              <li>Text Type: str</li>
+              <li>Numeric Types: int,float,complex</li>
+              <li>Sequence Types: list,tuple,range</li>
+              <li>Mapping Types: dict</li>
+              <li>Set Types: set,frozenset</li>
+              <li>Boolean Type: bool</li>
+              <li>Binary Types: bytes,bytearray,memoryview</li>
+            </ul>
+          </article>
+        </section>
+        <section class="main-section" id="variables">
+          <header>Variables</header>
+          <article>
+            <p>
+              Python is not “statically typed”. We do not need to declare
+              variables before using them or declare their type. A variable is
+              created the moment we first assign a value to it. A variable is a
+              name given to a memory location. It is the basic unit of storage
+              in a program.
+            </p>
+            <p>
+              The value stored in a variable can be changed during program
+              execution. A variable is only a name given to a memory location,
+              all the operations done on the variable effects that memory
+              location.
+            </p>
+            <p>
+              A variable name must start with a letter or the underscore
+              character. A variable name cannot start with a number. A variable
+              name can only contain alpha-numeric characters and underscores
+              (A-z, 0-9, and _ ). Variable names are case-sensitive (name, Name
+              and NAME are three different variables). The reserved
+              words(keywords) cannot be used naming the variable.
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="if_else_statements">
+          <header>If...else Statements</header>
+          <article>
+            <p>
+              The if statement alone tells us that if a condition is true it
+              will execute a block of statements and if the condition is false
+              it won’t. But what if we want to do something else if the
+              condition is false. Here comes the else statement. We can use the
+              else statement with if statement to execute a block of code when
+              the condition is false.
+            </p>
+            <code
+              >a = 200 b = 33 if b > a: print("b is greater than a") elif a ==
+              b: print("a and b are equal") else: print("a is greater than
+              b")</code
+            >
+          </article>
+        </section>
+        <section class="main-section" id="while_loop">
+          <header>While loop</header>
+          <article>
+            <p>
+              Python While Loop is used to execute a block of statements
+              repeatedly until a given condition is satisfied. And when the
+              condition becomes false, the line immediately after the loop in
+              the program is executed. While loop falls under the category of
+              indefinite iteration. Indefinite iteration means that the number
+              of times the loop is executed isn’t specified explicitly in
+              advance.
+            </p>
+            <code> while expression: statement(s) </code>
+            <p>
+              Statements represent all the statements indented by the same
+              number of character spaces after a programming construct are
+              considered to be part of a single block of code. Python uses
+              indentation as its method of grouping statements.
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="user_defined_functions">
+          <header>User Defined Functions</header>
+          <article>
+            <p>
+              Python Functions is a block of related statements designed to
+              perform a computational, logical, or evaluative task. The idea is
+              to put some commonly or repeatedly done tasks together and make a
+              function so that instead of writing the same code again and again
+              for different inputs, we can do the function calls to reuse code
+              contained in it over and over again.
+            </p>
+            <code
+              >def function_name(parameters): """docstring""" statement(s)
+              return expression</code
+            >
+            <code></code>
+            <code></code>
+          </article>
+        </section>
+        <section class="main-section" id="Reference">
+          <header>Reference</header>
+          <article>
+            <p>All the documentation in this page is taken from:</p>
+            <ul style="list-style: disc">
+              <li>
+                <a
+                  style="text-decoration: underline"
+                  href="https://www.geeksforgeeks.org/python-programming-language/?ref=shm"
+                  target="_blank"
+                  >geeksforgeeks</a
+                >
+              </li>
+              <li>
+                <a
+                  style="text-decoration: underline"
+                  href="https://www.w3schools.com/python/default.asp"
+                  target="_blank"
+                  >w3schools</a
+                >
+              </li>
+            </ul>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
